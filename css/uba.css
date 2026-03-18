@@ -780,7 +780,7 @@ body {
 .video-card iframe{
     border-radius: 12px;
     margin-top: -50px;
-    width: 4gi00px;
+    width: 400px;
 }
 
 .video-card p {
@@ -791,6 +791,12 @@ body {
     color: rgb(255, 255, 255);
     /* margin-top: 10px;
     font-size: 16px; */
+}
+
+@media(max-width:1400px) {
+    .video-card iframe{
+        width: 400px;
+    }
 }
 
 @media(max-width:1200px) {
