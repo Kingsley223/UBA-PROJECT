@@ -641,7 +641,7 @@ body {
 .bankings {
     /* padding: 80px 10%; */
     background-color: #262626;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-top: 20px;
     /* width: 100%; */
     color: white;
