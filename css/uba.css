@@ -7,6 +7,7 @@
 
 body {
     background: #111;
+    overflow-x: hidden;
 }
 
 .header {
@@ -799,6 +800,12 @@ body {
         width: 400px;
     }
 } */
+
+@media(max-width:1400px) {
+    .video-card iframe {
+        width: 600px;
+    }
+}
 
 @media(max-width:1205px) {
     .header {
