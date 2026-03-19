@@ -641,7 +641,7 @@ body {
 .bankings {
     /* padding: 80px 10%; */
     background-color: #262626;
-    /* overflow: hidden; */
+    overflow: hidden;
     margin-top: 20px;
     /* width: 100%; */
     color: white;
@@ -780,7 +780,8 @@ body {
 .video-card iframe{
     border-radius: 12px;
     margin-top: -50px;
-    width: 400px;
+    width: 600px;
+    height: 500px;
 }
 
 .video-card p {
@@ -793,13 +794,13 @@ body {
     font-size: 16px; */
 }
 
-@media(max-width:1400px) {
+/* @media(max-width:1400px) {
     .video-card iframe{
         width: 400px;
     }
-}
+} */
 
-@media(max-width:1200px) {
+@media(max-width:1205px) {
     .header {
         width: 100%;
     }
@@ -809,7 +810,7 @@ body {
     }
 
     .video-card iframe{
-       width: 400px;
+      width: 500px;
     }
 
     /* .right-float{
@@ -825,9 +826,9 @@ body {
     .nav-item {
         font-size: 16px;
     }
-     .video-card iframe{
-       width: 400px;
-    }
+   
+
+ 
 }
 
 @media (max-width:1070px) {
@@ -835,6 +836,10 @@ body {
     .header {
         width: 100%;
     }
+
+      /* .video-card {
+       grid-template-columns: 1fr;
+    } */
 
     .nav-links {
         display: none;
@@ -902,13 +907,13 @@ body {
         padding: 20px;
     }
 
-    .banking-text {
+    /* .banking-text {
         width: 65%;
     }
 
     .banking-text p {
         width: 90%;
-    }
+    } */
 
 }
 
@@ -1096,7 +1101,7 @@ body {
 
 }
 
-@media (max-width:300px) {
+@media (max-width:320px) {
 
     .hero {
         width: 100%;
@@ -1146,6 +1151,10 @@ body {
         width: 88%;
     }
 
+    .banking-text p{
+        width: 95%;
+    }
+
     .card-slider {
         width: 88%;
         overflow: hidden;
@@ -1171,7 +1180,7 @@ body {
         border-radius: 32px;
     }
 
-    .right-float{
+    /* .right-float{
         right: 30px;
-    }
+    } */
 }
