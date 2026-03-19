@@ -7,7 +7,6 @@
 
 body {
     background: #111;
-    overflow-x: hidden;
 }
 
 .header {
@@ -640,11 +639,9 @@ body {
 
 
 .bankings {
-    /* padding: 80px 10%; */
+    width: 100%;
     background-color: #262626;
-    /* overflow: hidden; */
     margin-top: 20px;
-    /* width: 100%; */
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -750,103 +747,43 @@ body {
 }
 
 
-
-
-.videos h2 {
-    width: 93%;
-    margin: auto;
-    font-family: "UBA Sans", Roboto, sans-serif;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 44px;
-    color: rgb(250, 250, 250);
-    padding-top: 120px;
-    /* width: 50%; */
-    /* font-size: 32px;
-    margin-bottom: 30px; */
-}
-
-.videoss {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-.video-card {
-    width: 88%;
-    margin: auto;
-    outline: black;
-}
-
-.video-card iframe{
-    border-radius: 12px;
-    margin-top: -50px;
-    width: 400px;
-    height: 500px;
-}
-
-.video-card p {
-    font-family: "UBA Sans", Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    color: rgb(255, 255, 255);
-    /* margin-top: 10px;
-    font-size: 16px; */
-}
-
 /* @media(max-width:1400px) {
     .video-card iframe{
         width: 400px;
     }
 } */
 
-@media(max-width:1400px) {
-    .video-card iframe {
-        width: 600px;
-    }
-}
 
-@media(max-width:1205px) {
-    .header {
-        width: 100%;
-    }
 
-    .nav-links span {
-        display: none;
+    @media(max-width:1205px) {
+        .header {
+            width: 100%;
+        }
+
+        .nav-links span {
+            display: none;
+        }
     }
 
-    .video-card iframe{
-      width: 500px;
+    @media(max-width:1105px) {
+        .header {
+            width: 100%;
+        }
+
+        .nav-item {
+            font-size: 16px;
+        }
+
+
+
     }
 
-    /* .right-float{
-        right: 250px;
-    } */
-}
-
-@media(max-width:1105px) {
-    .header {
-        width: 100%;
-    }
-
-    .nav-item {
-        font-size: 16px;
-    }
-   
-
- 
-}
 
 @media (max-width:1070px) {
 
     .header {
         width: 100%;
     }
-
-      /* .video-card {
-       grid-template-columns: 1fr;
-    } */
 
     .nav-links {
         display: none;
@@ -914,40 +851,11 @@ body {
         padding: 20px;
     }
 
-    /* .banking-text {
-        width: 65%;
-    }
-
-    .banking-text p {
-        width: 90%;
-    } */
-
 }
 
 @media (max-width:900px) {
-    .banking-text{
+    .banking-text {
         width: 70%;
-    }
-
-    .videos h2{
-        width: 70%;
-    }
-
-    
-
-    .internet-btn{
-        /* margin-left: 400px; */
-    }
-
-    .videoss{
-        grid-template-columns: 1fr;
-        width: 70%;
-        /* margin-top: 80px; */
-    }
-
-    .video-card iframe{
-        width: 800px;
-        border-radius: 52px;
     }
 }
 
@@ -963,11 +871,6 @@ body {
 
     .banking-text {
         width: 85%;
-    }
-
-     .video-card iframe{
-        width: 700px;
-        border-radius: 42px;
     }
 }
 
@@ -989,10 +892,7 @@ body {
     .card {
         min-width: 100%;
     }
-     .video-card iframe{
-        width: 650px;
-        border-radius: 52px;
-    }
+
 }
 
 @media (max-width:600px) {
@@ -1040,12 +940,6 @@ body {
     .hero-img img {
         width: 100%;
         margin-top: 40px;
-    }
-
-
-     .video-card iframe{
-        width: 550px;
-        border-radius: 52px;
     }
 
 }
@@ -1100,12 +994,6 @@ body {
         font-size: 33px;
     }
 
-     .video-card iframe{
-        width: 350px;
-        height: 250px;
-        border-radius: 32px;
-    }
-
 }
 
 @media (max-width:370px) {
@@ -1158,7 +1046,7 @@ body {
         width: 88%;
     }
 
-    .banking-text p{
+    .banking-text p {
         width: 95%;
     }
 
@@ -1174,20 +1062,4 @@ body {
     .logo {
         margin-right: -10px;
     }
-
-
-    .videos h2{
-        width: 93%;
-        font-size: 35px;
-    }
-
-        .video-card iframe{
-        width: 250px;
-        height: 150px;
-        border-radius: 32px;
-    }
-
-    /* .right-float{
-        right: 30px;
-    } */
 }
