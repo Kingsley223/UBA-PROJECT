@@ -851,6 +851,14 @@ body {
     margin: auto;
 }
 
+.countries img{
+    width: 18px;
+}
+
+.countries a{
+    color: white;
+    text-decoration: none;
+}
 .countries li {
     margin-bottom: 15px;
     cursor: pointer;
