@@ -471,3 +471,154 @@ body {
     box-shadow: 5px 8px 18px red;
     border-radius: 22px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    padding: 10px 40px;
+
+}
+
+
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    padding: 90px 40px;
+
+}
+
+/* LEFT GRID */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+}
+
+.footer-grid h4 {
+    margin-bottom: 12px;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-grid p {
+    font-family: "UBA Sans", Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    /* line-height: 24px; */
+    color: rgb(169, 169, 169);
+    margin-bottom: 20px;
+    width: 83%;
+    cursor: pointer;
+}
+
+.footer-grid p:hover{
+    text-decoration: underline;
+}
+
+.footer-right h4 {
+    margin-bottom: 10px;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-right p {
+    font-family: "UBA Sans", Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(169, 169, 169);
+    margin: 10px 0;
+}
+
+.footer-right p:hover{
+    text-decoration: underline;
+}
+.app-title {
+    margin-top: 65px;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+/* TOGGLE (like your image) */
+.toggle {
+    margin-top: 15px;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background: #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.toggle span {
+    z-index: 2;
+    color: gray;
+}
+
+.toggle-ball {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    background: #fff;
+    left: 0;
+    transition: 0.3s;
+}
+
+.dark .toggle-ball {
+    left: 80%;
+}
+.footer-bottom {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    width: 90%;
+    margin: auto;
+     font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
