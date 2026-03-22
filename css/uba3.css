@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #111;
+    /* overflow-x: hidden; */
+}
+
+.header {
+    width: 100%;
+    background: #111;
+    padding: 15px 40px;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* left */
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.homes a {
+    text-decoration: none;
+}
+
+.homes span {
+    color: gray;
+    margin-top: 5px;
+}
+
+.homes span:hover {
+    color: red;
+}
+
+.icons-list {
+    display: none;
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    padding-top: 5px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.nav-item {
+    position: relative;
+    padding: 20px 0;
+    color: #ccc;
+    cursor: pointer;
+    /* list-style: none; */
+
+}
+
+
+
+/* red hover line */
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 0;
+    height: 3px;
+    background: red;
+    transition: 0.5s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.nav-item:hover {
+    color: white;
+}
+
+.dropdown {
+    position: absolute;
+    left: -140px;
+    top: 100%;
+    width: 1180px;
+    /* background-color: #111; */
+    /* border-top: 1px solid #333; */
+    opacity: 1;
+    visibility: hidden;
+    transform: translateY(20px);
+    margin-top: -20px;
+}
+
+/* show dropdown */
+.nav-item:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* grid layout */
+.dropdown-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 40px 80px;
+    background-color: #111;
+    width: 1450px;
+    margin-top: 50px;
+    height: 290px;
+}
+
+/* column style */
+.drop-col h4 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.drop-col p {
+    color: #aaa;
+    font-size: 15px;
+    margin-bottom: 18px;
+    cursor: pointer;
+    width: 300px;
+}
+
+.drop-col1:hover {
+    background-color: grey;
+    border-radius: 14px;
+}
+
+.drop-col1 {
+    padding: 10px 10px;
+    margin-top: -30px;
+    margin-bottom: 25px;
+}
+
+.drop-col1b:hover {
+    background-color: grey;
+    border-radius: 14px;
+}
+
+.drop-col1b {
+    padding: 10px 10px;
+    margin-top: -30px;
+    margin-bottom: 35px;
+}
+
+.drop-col2:hover {
+    background-color: grey;
+    border-radius: 14px;
+}
+
+.drop-col2 {
+    padding: 8px 8px;
+    margin-top: -30px;
+    margin-bottom: 25px;
+}
+
+.drop-col2b:hover {
+    background-color: grey;
+    border-radius: 14px;
+}
+
+.drop-col2b {
+    padding: 8px 8px;
+    margin-top: -30px;
+    margin-bottom: 25px;
+}
+
+.drop-col3:hover {
+    background-color: grey;
+    border-radius: 14px;
+}
+
+.drop-col3 {
+    padding: 6px 6px;
+    margin-top: -30px;
+    margin-bottom: 15px;
+}
+
+.drop-col3b:hover {
+    background-color: grey;
+    border-radius: 14px;
+}
+
+.drop-col3b {
+    padding: 6px 6px;
+}
+
+/* quick links border */
+
+.quick-links {
+    border-left: 1px solid #333;
+    padding-left: 20px;
+    margin-top: -50px;
+}
+
+.quick-links h4 {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.quick-links a {
+    display: block;
+    margin-bottom: 35px;
+    width: 180px;
+    /* padding-left: 1px; */
+}
+
+.menu-links {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+.menu-links .icon {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+/* the hidden line */
+.menu-links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: red;
+    transition: 0.3s ease;
+}
+
+/* hover effect */
+.menu-links:hover::after {
+    width: 70%;
+    left: 15px;
+}
+
+.icon2 {
+    display: none;
+}
+
+.menu-links:hover .icon1 {
+    display: none;
+}
+
+.menu-links:hover .icon2 {
+    display: inline;
+}
+
+
+.nav-item {
+    position: relative;
+}
+
+.investors-dropdown {
+    position: absolute;
+    left: -215px;
+    top: 100%;
+    width: 1000px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    margin-top: -25px;
+}
+
+
+.nav-item:hover .investors-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    background-color: #111;
+    width: 1410px;
+    margin-top: 20px;
+}
+
+.invest-col h3 {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 13px;
+    /* width: 100%; */
+}
+
+.invest-col p {
+    color: #aaa;
+    width: 300px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.invest-col1 {
+    padding: 10px 10px;
+    margin-top: -30px;
+    margin-bottom: 25px;
+    /* padding-top: 20px; */
+}
+
+.invest-col1b {
+    padding: 10px 10px;
+    margin-top: -30px;
+    margin-bottom: 25px;
+}
+
+.invest-col1c {
+    padding: 10px 10px;
+    margin-top: -30px;
+    margin-bottom: 25px;
+}
+
+.invest-col1:hover {
+    background-color: rgba(128, 128, 128, 0.432);
+    border-radius: 14px;
+    /* padding: 5px 5px; */
+    /* margin-top: 20px; */
+}
+
+.invest-col1b:hover {
+    background-color: rgba(128, 128, 128, 0.432);
+    border-radius: 14px;
+}
+
+.invest-col1c:hover {
+    background-color: rgba(128, 128, 128, 0.432);
+    border-radius: 14px;
+}
+
+.quick-links2 {
+    border-left: 1px solid #333;
+    padding-left: 20px;
+    margin-top: -45px;
+}
+
+.quick-links2 h3 {
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.quick-links2 a {
+    display: block;
+    margin-bottom: 35px;
+    width: 180px;
+    padding-left: 20px;
+}
+
+/* right */
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons {
+    color: #ccc;
+    cursor: pointer;
+}
+
+
+.internet-btn {
+    font-family: "Sans", Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #111;
+    color: #ccc;
+    border: 1px solid #333;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 180px;
+    height: 50px;
+}
+
+.internet-btn:hover {
+    background: red;
+}
+
+.internet-btn:hover span {
+    color: white;
+}
+
+.internet-btn span {
+    font-size: 15px;
+    color: red;
+
+}
+
+.logo {
+    height: 50px;
+}
+
+
+.left-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: red;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.left-float:hover {
+    box-shadow: 5px 8px 18px red;
+    border-radius: 22px;
+}
+
+.right-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff3b3b;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.right-float:hover {
+    box-shadow: 5px 8px 18px red;
+    border-radius: 22px;
+}
+
+.internets {
+    display: flex;
+    padding-top: 50px;
+    margin: auto;
+    margin-top: 5%;
+    width: 90%;
+}
+
+/* .banking {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgb(212, 212, 212);
+}
+
+.online {
+    display: flex;
+    padding-top: 20px;
+    margin: auto;
+    width: 93%;
+}
+
+.online-banking {
+    font-family: "UBA Sans", Roboto, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+    width: 40%;
+}
+
+.online-banking img {
+    width: 50%;
+} */
+
+.hero {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+     margin-top: 80px;
+}
+
+.hero-text h1 {
+    font-family: "UBA Sans", Roboto, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+    width: 70%;
+    padding-top: 20px;
+    margin-top: 90px;
+}
+
+.hero-text p {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 70%;
+    color: rgb(255, 255, 255);
+}
+
+.hero-img {
+    /* background-color: #262626; */
+    width: 900px;
+
+}
+
+.hero-img img {
+    width: 100%;
+    border-radius: 40px;
+    /* width: 500px; */
+}
