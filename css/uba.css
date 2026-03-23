@@ -1660,13 +1660,13 @@ body {
         width: 280px;
     }
 
-     .hero2{
+     /* .hero2{
         width: 900px;
     }
  .hero-box2 {
         display: flex;
         flex-direction: column;
-        width: 55%;
+        width: 40%;
         align-items: center;
         text-align: center;
         margin-left: -100px;
@@ -1698,8 +1698,8 @@ body {
 
     .hero-img2 img {
         width: 300px;
-        /* max-width: 300px; */
-    }
+       
+    } */
     
 
 }
