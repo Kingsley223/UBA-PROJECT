@@ -644,7 +644,7 @@ body {
     background-color: #262626;
     /* overflow: hidden; */
     margin-top: 20px;
-    /* width: 100%; */
+    width: 100%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -1181,7 +1181,7 @@ body {
     }
 
     .card {
-        min-width: 220px;
+        /* min-width: 220px; */
         min-height: 260px;
         padding: 20px;
     }
@@ -1194,6 +1194,20 @@ body {
         width: 90%;
     } */
 
+
+    .video-card iframe{
+        width: 400px;
+    }
+}
+
+@media (max-width:850px) {
+
+    .video-card{
+        width: 93%;
+    }
+    .video-card iframe{
+      width: 400px;
+    }
 }
 
 @media (max-width:900px) {
@@ -1217,9 +1231,13 @@ body {
         /* margin-top: 80px; */
     }
 
+    .video-card{
+        width: 80%;
+    }
+
     .video-card iframe {
-        width: 800px;
-        border-radius: 52px;
+        width: 700px;
+        /* border-radius: 52px; */
     }
 }
 
@@ -1234,12 +1252,23 @@ body {
     }
 
     .banking-text {
-        width: 85%;
+        width: 80%;
+    }
+    .banking-text p{
+        width: 70%;
     }
 
     .video-card iframe {
-        width: 700px;
-        border-radius: 42px;
+        width: 600px;
+        /* border-radius: 42px; */
+    }
+
+    .videos h2{
+        width: 80%;
+    }
+
+    .video-card {
+        width: 80%;
     }
 }
 
@@ -1259,13 +1288,35 @@ body {
     }
 
     .card {
-        min-width: 100%;
+        /* min-width: 100%; */
     }
 
     .video-card iframe {
         width: 650px;
-        border-radius: 52px;
     }
+
+    .videos h2{
+        width: 80%;
+    }
+
+    .banking-text p{
+        width: 80%;
+    }
+
+    .banking-text h2{
+        width: 80%;
+    }
+}
+@media (max-width:730px) {
+    .video-card iframe{
+        width: 600px;
+    }
+}
+
+@media(max-width:650px){
+  .video-card iframe{
+    width: 550px;
+  }
 }
 
 @media (max-width:600px) {
@@ -1317,12 +1368,34 @@ body {
 
 
     .video-card iframe {
-        width: 550px;
-        border-radius: 52px;
+        width: 500px;
+        height: 300px;
     }
 
 }
 
+@media(max-width:560px) {
+    .video-card iframe{
+        width: 480px;
+    }
+}
+
+@media(max-width:550px) {
+    .video-card iframe{
+        width: 450px;
+    }
+}
+@media(max-width:500px) {
+    .video-card iframe{
+        width: 400px;
+    }
+}
+
+@media(max-width:450px) {
+    .video-card iframe{
+        width: 350px;
+    }
+}
 @media (max-width:410px) {
 
     .hero {
@@ -1379,9 +1452,12 @@ body {
         border-radius: 32px;
     }
 
+    .right-float{
+        /* right: 50px; */
+    }
 }
 
-@media (max-width:370px) {
+@media (max-width:400px) {
 
     .hero {
         width: 100%;
@@ -1450,17 +1526,47 @@ body {
 
 
     .videos h2 {
-        width: 93%;
+        width: 80%;
         font-size: 35px;
     }
 
     .video-card iframe {
-        width: 250px;
-        height: 150px;
+        width: 350px;
+        height: 200px;
         border-radius: 32px;
     }
+}
 
-    .right-float {
-        right: 50px;
+@media(max-width:390px) {
+    .video-card iframe{
+        width: 300px;
+    }
+
+    .video-card{
+        width: 70%;
+    }
+}
+
+@media(max-width:360px) {
+    .video-card iframe{
+        width: 280px;
+    }
+}
+@media(max-width:330px) {
+    .video-card iframe{
+        width: 250px;
+    }
+    .bankings{
+        overflow-x: hidden;
+    }
+}
+
+@media(max-width:300px) {
+    .video-card iframe{
+        width: 250px;
+    }
+
+    .video-card{
+        width: 80%;
     }
 }
