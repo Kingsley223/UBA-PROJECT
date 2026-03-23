@@ -932,7 +932,7 @@ body {
 
 /* IMAGE */
 .hero-img2 img {
-    width: 450px;
+    width: 650px;
     /* height: 350px; */
     max-width: 100%;
 }
@@ -989,7 +989,7 @@ body {
     cursor: pointer;
 }
 
-.footer-grid p:hover{
+.footer-grid p:hover {
     text-decoration: underline;
 }
 
@@ -1011,9 +1011,10 @@ body {
     margin: 10px 0;
 }
 
-.footer-right p:hover{
+.footer-right p:hover {
     text-decoration: underline;
 }
+
 .app-title {
     margin-top: 65px;
     font-family: Roboto;
@@ -1058,6 +1059,7 @@ body {
 .dark .toggle-ball {
     left: 80%;
 }
+
 .footer-bottom {
     margin-top: 40px;
     display: flex;
@@ -1065,7 +1067,7 @@ body {
     font-size: 12px;
     width: 90%;
     margin: auto;
-     font-family: Roboto;
+    font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -1198,10 +1200,55 @@ body {
     }   */
 
 
-    .video-card iframe{
+    .video-card iframe {
         width: 400px;
     }
+
+    .hero-box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text2 {
+        width: 100%;
+    }
+
+    .hero-text2 h1 {
+        width: 100%;
+        font-family: "UBA Sans", Roboto, sans-serif;
+        font-weight: 600;
+        line-height: 44px;
+        color: rgb(255, 255, 255);
+        font-size: 28px;
+    }
+
+    .hero-text2 p{
+        width: 100%;
+    }
+
+    .hero-btns2 {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .hero-img2 {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-img2 img {
+        width: 100%;
+        max-width: 900px;
+    }
+
 }
+
 
 @media (max-width:900px) {
     .banking-text {
@@ -1212,41 +1259,38 @@ body {
         width: 70%;
     }
 
-
-
-    .internet-btn {
-        /* margin-left: 400px; */
-    }
-
     .videoss {
         grid-template-columns: 1fr;
         width: 70%;
-        /* margin-top: 80px; */
     }
 
-    .video-card{
+    .video-card {
         width: 80%;
     }
 
     .video-card iframe {
         width: 700px;
-        /* border-radius: 52px; */
     }
 
-       .content{
+    .content {
         width: 80%;
     }
 
-    .content p{
+    .content p {
         width: 90%;
     }
 
-    .countries{
+    .countries {
         width: 100%;
     }
 
-    .countries a{
-          width: 70%;
+    .countries a {
+        width: 70%;
+    }
+
+    .hero-img2{
+        width: 100%;
+        
     }
 }
 
@@ -1254,11 +1298,18 @@ body {
 
 @media (max-width:850px) {
 
-    .video-card{
-        width: 93%;
+    .video-card {
+        width: 80%;
     }
-    .video-card iframe{
-      width: 400px;
+
+    .video-card iframe {
+        width: 700px;
+        height: 300px;
+    }
+
+       .hero-img2 img {
+        width: 100%;
+        max-width: 1200px;
     }
 }
 
@@ -1275,7 +1326,8 @@ body {
     .banking-text {
         width: 80%;
     }
-    .banking-text p{
+
+    .banking-text p {
         width: 70%;
     }
 
@@ -1284,12 +1336,17 @@ body {
         /* border-radius: 42px; */
     }
 
-    .videos h2{
+    .videos h2 {
         width: 80%;
     }
 
     .video-card {
         width: 80%;
+    }
+
+     .hero-img2 img {
+        width: 100%;
+        max-width: 1200px;
     }
 }
 
@@ -1307,32 +1364,42 @@ body {
         width: 650px;
     }
 
-    .videos h2{
+    .videos h2 {
         width: 80%;
     }
 
-    .banking-text p{
+    .banking-text p {
         width: 80%;
     }
 
-    .banking-text h2{
+    .banking-text h2 {
         width: 80%;
     }
 
-    .countries{
-        grid-template-columns:repeat(1, 1fr);
+    .countries {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+     .hero-btns2 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 25px;
+        width: 100%;
+        align-items: center;
     }
 }
+
 @media (max-width:730px) {
-    .video-card iframe{
+    .video-card iframe {
         width: 600px;
     }
 }
 
-@media(max-width:650px){
-  .video-card iframe{
-    width: 550px;
-  }
+@media(max-width:650px) {
+    .video-card iframe {
+        width: 550px;
+    }
 }
 
 @media (max-width:600px) {
@@ -1388,30 +1455,35 @@ body {
         height: 300px;
     }
 
+    /* .hero-img2 img{
+        width: 400px;
+    } */
 }
 
 @media(max-width:560px) {
-    .video-card iframe{
+    .video-card iframe {
         width: 480px;
     }
 }
 
 @media(max-width:550px) {
-    .video-card iframe{
+    .video-card iframe {
         width: 450px;
     }
 }
+
 @media(max-width:500px) {
-    .video-card iframe{
+    .video-card iframe {
         width: 400px;
     }
 }
 
 @media(max-width:450px) {
-    .video-card iframe{
+    .video-card iframe {
         width: 350px;
     }
 }
+
 @media (max-width:410px) {
 
     .hero {
@@ -1468,7 +1540,7 @@ body {
         border-radius: 32px;
     }
 
-    .right-float{
+    .right-float {
         /* right: 50px; */
     }
 }
@@ -1554,40 +1626,85 @@ body {
 }
 
 @media(max-width:390px) {
-    .video-card iframe{
+    .video-card iframe {
         width: 300px;
     }
 
-    .video-card{
+    .video-card {
         width: 70%;
     }
 }
 
 @media(max-width:360px) {
-    .video-card iframe{
+    .video-card iframe {
         width: 280px;
     }
+
+
 }
+
 @media(max-width:330px) {
-    .video-card iframe{
+    .video-card iframe {
         width: 230px;
     }
 
-    .video-card{
+    .video-card {
         width: 75%;
     }
-    .bankings{
+
+    .bankings {
         overflow-x: hidden;
     }
 
-    .content{
+    .content {
         width: 85%;
     }
 
-    .content p{
+    .content p {
         font-size: 16px;
-         width: 100%;
+        width: 100%;
     }
+
+    .hero2{
+        width: 1200px;
+    }
+ .hero-box2 {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text2 {
+        width: 100%;
+    }
+
+    .hero-text2 h1 {
+        width: 100%;
+        font-family: "UBA Sans", Roboto, sans-serif;
+        font-weight: 600;
+        line-height: 44px;
+        color: rgb(255, 255, 255);
+        font-size: 28px;
+    }
+
+    .hero-text2 p{
+        width: 100%;
+    }
+
+    .hero-img2 {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-img2 img {
+        width: 100%;
+        max-width: 900px;
+    }
+
 
 }
 
