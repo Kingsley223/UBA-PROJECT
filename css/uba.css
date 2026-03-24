@@ -606,9 +606,7 @@ body {
     cursor: pointer;
     overflow: hidden;
 }
-
-/* sliding red background */
-.btn2::before {
+.btn2::before  {
     content: "";
     position: absolute;
     top: 0;
@@ -618,24 +616,26 @@ body {
     background: red;
     transition: 0.4s ease;
     z-index: 1;
+    color: white;
+     
 }
 
-.btn2 a {
+.btn2 a{
     color: white;
     text-decoration: none;
-    z-index: 2;
+    /* z-index: 2; */
     /* font-family: "UBA Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px; */
 }
-
 .btn2:hover::before {
     width: 100%;
+    
 }
 
-.btn2:hover a {
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+.btn2:hover {
+    box-shadow: 5px 4px 18px #ff3d2f;
 }
 
 
