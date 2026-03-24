@@ -200,6 +200,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+.top-row option{
+    color: red;
+}
 .top-row select {
     /* flex: 1; */
     color: white;
