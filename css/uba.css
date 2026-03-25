@@ -603,7 +603,7 @@ body {
     cursor: pointer;
     overflow: hidden;
 }
-.btn2::before  {
+/* .btn2::before  {
     content: "";
     position: absolute;
     top: 0;
@@ -615,7 +615,7 @@ body {
     z-index: 1;
     color: white;
      
-}
+} */
 
 .btn2 a{
     color: white;
@@ -626,12 +626,14 @@ body {
     font-weight: 400;
     line-height: 28px; */
 }
-.btn2:hover::before {
+/* .btn2:hover::before {
     width: 100%;
     
-}
+} */
 
 .btn2:hover {
+    background-color: red;
+    color: white;
     box-shadow: 5px 4px 18px #ff3d2f;
 }
 
