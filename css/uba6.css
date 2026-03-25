@@ -33,7 +33,6 @@ body {
 }
 
 
-/* left */
 
 .left-nav {
     display: flex;
@@ -79,13 +78,13 @@ body {
     padding: 20px 0;
     color: #ccc;
     cursor: pointer;
-    /* list-style: none; */
+    
 
 }
 
 
 
-/* red hover line */
+
 
 .nav-item::after {
     content: "";
@@ -111,22 +110,21 @@ body {
     left: -140px;
     top: 100%;
     width: 1180px;
-    /* background-color: #111; */
-    /* border-top: 1px solid #333; */
+   
     opacity: 1;
     visibility: hidden;
     transform: translateY(20px);
     margin-top: -20px;
 }
 
-/* show dropdown */
+
 .nav-item:hover .dropdown {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-/* grid layout */
+
 .dropdown-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -138,7 +136,7 @@ body {
     height: 290px;
 }
 
-/* column style */
+
 .drop-col h4 {
     color: white;
     margin-bottom: 8px;
@@ -216,7 +214,7 @@ body {
     padding: 6px 6px;
 }
 
-/* quick links border */
+
 
 .quick-links {
     border-left: 1px solid #333;
@@ -233,7 +231,7 @@ body {
     display: block;
     margin-bottom: 35px;
     width: 180px;
-    /* padding-left: 1px; */
+   
 }
 
 .menu-links {
@@ -250,7 +248,7 @@ body {
     transition: 0.3s;
 }
 
-/* the hidden line */
+
 .menu-links::after {
     content: "";
     position: absolute;
@@ -262,7 +260,7 @@ body {
     transition: 0.3s ease;
 }
 
-/* hover effect */
+
 .menu-links:hover::after {
     width: 70%;
     left: 15px;
@@ -315,7 +313,7 @@ body {
     color: white;
     margin-bottom: 5px;
     font-size: 13px;
-    /* width: 100%; */
+    
 }
 
 .invest-col p {
@@ -330,7 +328,7 @@ body {
     padding: 10px 10px;
     margin-top: -30px;
     margin-bottom: 25px;
-    /* padding-top: 20px; */
+    
 }
 
 .invest-col1b {
@@ -348,8 +346,7 @@ body {
 .invest-col1:hover {
     background-color: rgba(128, 128, 128, 0.432);
     border-radius: 14px;
-    /* padding: 5px 5px; */
-    /* margin-top: 20px; */
+    
 }
 
 .invest-col1b:hover {
@@ -436,8 +433,7 @@ body {
 
 .hero {
     display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
+        justify-content: space-between;
     margin: auto;
     width: 90%;
     gap: 40px;
@@ -449,15 +445,14 @@ body {
     flex: 1 1 320px;
 }
 
-.hero-text h1 {
+ .hero-text h1 {
     font-family: "UBA Sans", Roboto, sans-serif;
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
     color: rgb(255, 255, 255);
-    /* width: 100%; */
-    margin-top: 190px;
-    /* padding-top: 20px; */
+margin-top: 190px;
+    
 }
 
 .hero-text p {
@@ -480,7 +475,7 @@ body {
 
 .hero-img img {
     width: 100%;
-    /* width: 500px; */
+    
 }
 
 .buttons {
@@ -490,9 +485,7 @@ body {
 }
 
 .btn1 {
-    /* width: 100px; */
-    /* height: 40px; */
-    border-radius: 8px;
+border-radius: 8px;
     font-family: "UBA Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -509,8 +502,7 @@ body {
     box-shadow: 5px 8px 18px #ff3d2f;
 }
 
-/* Container Grid */
-.cards-container {
+ .cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -519,8 +511,7 @@ body {
     margin-top: 50px;
 }
 
-/* General Card */
-.card {
+ .card {
     color: white;
     border-radius: 12px;
     padding: 20px;
@@ -533,17 +524,7 @@ body {
     transform: translateY(-5px);
 }
 
-.large {
-    /* min-height: 500px; */
-}
 
-.medium {
-    /* min-height: 200px; */
-}
-
-.mediums {
-    /* min-height: 400px; */
-}
 
 .card h3 {
     margin-bottom: 15px;
@@ -562,8 +543,7 @@ body {
     line-height: 25px;
     width: 90%;
     margin-bottom: 38px;
-    /* padding-bottom: 20px; */
-    /* color: rgb(212, 212, 212); */
+  
 }
 
 .card i {
@@ -589,12 +569,14 @@ body {
     font-size: 34px;
     margin-bottom: 40px;
 }
+
 .cards-1 {
     display: flex;
     justify-content: space-between;
     gap: 25px;
     flex-wrap: wrap;
 }
+
 .card-1b {
     width: calc(25% - 19px);
     min-width: 220px;
@@ -602,6 +584,7 @@ body {
     overflow: hidden;
     background: #2a2a2a;
 }
+
 .top {
     height: 140px;
     background-color: rgba(128, 128, 128, 0.363);
@@ -609,9 +592,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .top img {
     width: 80px;
 }
+
 .bottom {
     background: #121212;
     padding: 18px;
@@ -670,16 +655,8 @@ body {
 
 
 
-.footer-wrapper {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* gap: 40px; */
-    /* width: 100%; */
-    /* padding: 90px 40px; */
 
-}
 
-/* LEFT GRID */
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -700,8 +677,7 @@ body {
 .footer-grid p {
     font-family: "UBA Sans", Roboto, sans-serif;
     font-size: 14px;
-    font-weight: 500;
-    /* line-height: 24px; */
+ font-weight: 500;
     color: rgb(169, 169, 169);
     margin-bottom: 20px;
     width: 83%;
@@ -712,8 +688,8 @@ body {
     text-decoration: underline;
 }
 
-.footer-grid a{
-     text-decoration: none;
+.footer-grid a {
+    text-decoration: none;
 }
 
 .footer-right h4 {
@@ -798,7 +774,7 @@ body {
     padding-bottom: 30px;
 }
 
-.footer-bottom span:hover{
+.footer-bottom span:hover {
     color: red;
     cursor: pointer;
 }
@@ -842,9 +818,7 @@ body {
         width: 500px;
     }
 
-    /* .right-float{
-        right: 250px;
-    } */
+   
 }
 
 @media(max-width:1105px) {
@@ -866,9 +840,7 @@ body {
         width: 100%;
     }
 
-    /* .video-card {
-       grid-template-columns: 1fr;
-    } */
+
 
     .nav-links {
         display: none;
@@ -894,8 +866,7 @@ body {
     }
 
     .hero {
-        /* padding: 80px 40px; */
-        display: flex;
+         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -930,19 +901,12 @@ body {
         width: 720px;
     }
 
+
+
     .card {
-        /* min-width: 220px; */
         min-height: 260px;
         padding: 20px;
     }
-
-    /* .banking-text {
-        width: 65%;
-    }
-
-    .banking-text p {
-        width: 90%;
-    }   */
 
 
     .video-card iframe {
@@ -969,7 +933,7 @@ body {
         font-size: 28px;
     }
 
-    .hero-text2 p{
+    .hero-text2 p {
         width: 100%;
     }
 
@@ -1196,8 +1160,9 @@ body {
     }
 }
 
-/* self.html responsive cleanup */
+
 @media (max-width: 1200px) {
+
     .dropdown,
     .investors-dropdown,
     .dropdown-container,

@@ -7,7 +7,6 @@
 
 body {
     background: #111;
-    /* overflow-x: hidden; */
 }
 
 .header {
@@ -30,7 +29,6 @@ body {
 }
 
 
-/* left */
 
 .left-nav {
     display: flex;
@@ -76,13 +74,11 @@ body {
     padding: 20px 0;
     color: #ccc;
     cursor: pointer;
-    /* list-style: none; */
 
 }
 
 
 
-/* red hover line */
 
 .nav-item::after {
     content: "";
@@ -108,22 +104,19 @@ body {
     left: -140px;
     top: 100%;
     width: 1180px;
-    /* background-color: #111; */
-    /* border-top: 1px solid #333; */
+
     opacity: 1;
     visibility: hidden;
     transform: translateY(20px);
     margin-top: -20px;
 }
 
-/* show dropdown */
 .nav-item:hover .dropdown {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-/* grid layout */
 .dropdown-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -135,7 +128,6 @@ body {
     height: 290px;
 }
 
-/* column style */
 .drop-col h4 {
     color: white;
     margin-bottom: 8px;
@@ -213,7 +205,6 @@ body {
     padding: 6px 6px;
 }
 
-/* quick links border */
 
 .quick-links {
     border-left: 1px solid #333;
@@ -230,7 +221,6 @@ body {
     display: block;
     margin-bottom: 35px;
     width: 180px;
-    /* padding-left: 1px; */
 }
 
 .menu-links {
@@ -247,7 +237,6 @@ body {
     transition: 0.3s;
 }
 
-/* the hidden line */
 .menu-links::after {
     content: "";
     position: absolute;
@@ -259,7 +248,6 @@ body {
     transition: 0.3s ease;
 }
 
-/* hover effect */
 .menu-links:hover::after {
     width: 70%;
     left: 15px;
@@ -312,7 +300,6 @@ body {
     color: white;
     margin-bottom: 5px;
     font-size: 13px;
-    /* width: 100%; */
 }
 
 .invest-col p {
@@ -327,7 +314,6 @@ body {
     padding: 10px 10px;
     margin-top: -30px;
     margin-bottom: 25px;
-    /* padding-top: 20px; */
 }
 
 .invest-col1b {
@@ -345,8 +331,7 @@ body {
 .invest-col1:hover {
     background-color: rgba(128, 128, 128, 0.432);
     border-radius: 14px;
-    /* padding: 5px 5px; */
-    /* margin-top: 20px; */
+  
 }
 
 .invest-col1b:hover {
@@ -382,7 +367,6 @@ body {
     padding-left: 20px;
 }
 
-/* right */
 
 .right-nav {
     display: flex;
@@ -513,7 +497,6 @@ body {
 
 .hero {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     margin: auto;
     width: 90%;
@@ -548,7 +531,6 @@ body {
 
 .hero-img img {
     width: 100%;
-    /* width: 500px; */
 }
 
 .buttons {
@@ -576,21 +558,7 @@ body {
     box-shadow: 5px 8px 18px #ff3d2f;
 }
 
-/* .btn2 {
-    width: 150px;
-    border-radius: 8px;
-    font-family: "UBA Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    background-color: #111;
-    border: 1px solid #333;
-}
 
-.btn2 a {
-    color: white;
-    text-decoration: none;
-} */
 
 .btn2 {
     position: relative;
@@ -606,33 +574,14 @@ body {
     cursor: pointer;
     overflow: hidden;
 }
-/* .btn2::before  {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background: red;
-    transition: 0.4s ease;
-    z-index: 1;
-    color: white;
-     
-} */
+
 
 .btn2 a{
     color: white;
     text-decoration: none;
-    /* z-index: 2; */
-    /* font-family: "UBA Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px; */
+  
 }
-/* .btn2:hover::before {
-    width: 100%;
-    
-} */
+
 
 .btn2:hover {
     background-color: red;
@@ -642,16 +591,13 @@ body {
 
 
 .bankings {
-    /* padding: 80px 10%; */
     background-color: #262626;
-    /* overflow: hidden; */
     margin-top: 20px;
     width: 100%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* TEXT */
 
 .banking-text {
     width: 90%;
@@ -672,17 +618,14 @@ body {
 }
 
 
-/* SLIDER */
 
 .card-slider {
-    /* */
     width: 95%;
     margin: auto;
     overflow: hidden;
 }
 
 
-/* CARD CONTAINER */
 
 .cards {
     display: flex;
@@ -763,22 +706,18 @@ body {
     line-height: 44px;
     color: rgb(250, 250, 250);
     padding-top: 120px;
-    /* width: 50%; */
-    /* font-size: 32px;
-    margin-bottom: 30px; */
+   
 }
 
 .videoss {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    /* width: 100%; */
 }
 
 .video-card {
     width: 88%;
     margin: auto;
-    /* outline: black; */
 }
 
 .video-card iframe {
@@ -794,20 +733,13 @@ body {
     font-weight: 600;
     line-height: 24px;
     color: rgb(255, 255, 255);
-    /* margin-top: 10px;
-    font-size: 16px; */
+    
 }
 
-/* .help {
-    height: 100vh;
-    background: url("your-image.jpg") center/cover no-repeat;
-    position: relative;
-    color: #fff;
-} */
+
+
 
 .overlay {
-    /* background: rgba(0, 0, 0, 0.6); */
-    /* height: 100%; */
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -881,7 +813,6 @@ body {
     padding: 60px 80px;
 }
 
-/* INNER BOX (THIS is what you were talking about 🔥) */
 .hero-box2 {
     background-color: #404040;
     border-radius: 20px;
@@ -892,7 +823,6 @@ body {
     gap: 40px;
 }
 
-/* TEXT */
 .hero-text2 {
     color: #fff;
     max-width: 500px;
@@ -909,7 +839,6 @@ body {
     width: 90%;
 }
 
-/* BUTTONS */
 .hero-btns2 {
     display: flex;
     gap: 15px;
@@ -932,20 +861,12 @@ body {
     color: white;
 }
 
-/* IMAGE */
 .hero-img2 img {
     width: 650px;
-    /* height: 350px; */
     max-width: 100%;
 }
 
-/* LINE UNDER */
-/* .hero-line {
-    width: 100%;
-    height: 1px;
-    background: #ccc;
-    margin-top: 30px;
-} */
+
 
 
 .footer {
@@ -955,16 +876,9 @@ body {
 
 
 
-.footer-wrapper {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* gap: 40px; */
-    /* width: 100%; */
-    /* padding: 90px 40px; */
 
-}
 
-/* LEFT GRID */
+
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -1193,18 +1107,11 @@ body {
     }
 
     .card {
-        /* min-width: 220px; */
         min-height: 260px;
         padding: 20px;
     }
 
-    /* .banking-text {
-        width: 65%;
-    }
-
-    .banking-text p {
-        width: 90%;
-    }   */
+   
 
 
     .video-card iframe {
@@ -1565,9 +1472,7 @@ body {
         border-radius: 32px;
     }
 
-    .right-float {
-        /* right: 50px; */
-    }
+    
 }
 
 @media (max-width:400px) {
