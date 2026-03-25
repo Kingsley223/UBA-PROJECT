@@ -997,6 +997,10 @@ body {
     text-decoration: underline;
 }
 
+.footer-grid a{
+     text-decoration: none;
+}
+
 .footer-right h4 {
     margin-bottom: 10px;
     font-family: Roboto;
@@ -1029,7 +1033,6 @@ body {
 }
 
 
-/* TOGGLE (like your image) */
 .toggle {
     margin-top: 15px;
     width: 120px;
