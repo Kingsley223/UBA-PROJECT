@@ -20,6 +20,9 @@ body {
     z-index: 1000;
 }
 
+.header a{
+    text-decoration: none;
+}
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -1790,12 +1793,6 @@ body {
 
 .hero-text {
     flex: 1 1 340px;
-}
-
-.hero-text h1,
-.hero-text p {
-    width: 100%;
-    max-width: 620px;
 }
 
 .hero-img {

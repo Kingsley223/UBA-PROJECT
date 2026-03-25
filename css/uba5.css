@@ -165,6 +165,7 @@ select {
     outline: none;
     border: 1px solid #ccc;
     text-align: center;
+    appearance: none;
 }
 
 button {
