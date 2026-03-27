@@ -8,6 +8,7 @@
 body {
     background: #111;
     width: 100%;
+    padding-top: 84px;
 }
 
 .header {
@@ -15,7 +16,8 @@ body {
     background: #111;
     padding: 15px 40px;
     border-bottom: 1px solid #333;
-    position: sticky;
+    position: fixed;
+    left: 0;
     top: 0;
     z-index: 1000;
 }
@@ -423,7 +425,7 @@ body {
 
 .impacts-dropdown {
     position: absolute;
-    left: -310px;
+    left: -305px;
     top: 100%;
     width: 1000px;
     padding: 40px;
@@ -497,8 +499,12 @@ body {
 
 .quick-linkss2 {
     border-left: 1px solid #333;
-    padding-left: 20px;
+    margin-right: 180px;
     margin-top: -45px;
+}
+
+.banking {
+    padding: 10px;
 }
 
 .quick-linkss2 h3 {
@@ -514,8 +520,9 @@ body {
 .quick-links2 a {
     display: block;
     margin-bottom: 35px;
+    margin-left: -30px;
     width: 300px;
-    padding-left: 20px;
+    padding-right: 10px;
     /* border: 1px solid white; */
 }
 
@@ -845,7 +852,7 @@ body {
     position: absolute;
     left: -530px;
     top: 100%;
-    width: 100px;
+    /* width: 100px; */
     padding: 40px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -917,8 +924,9 @@ body {
 
 .quick-linkss3 {
     border-left: 1px solid #333;
-    padding-left: 20px;
+    padding-right:180px;
     margin-top: -45px;
+    padding-left: 10px;
 }
 
 .quick-linkss3 h3 {
@@ -936,8 +944,7 @@ body {
     margin-top: 20px;
     margin-bottom: 35px;
     width: 300px;
-    padding-left: 20px;
-    /* border: 1px solid white; */
+    padding-right: 10px;
 }
 
 .menu-links8 {
@@ -2386,7 +2393,7 @@ body {
     flex-wrap: wrap;
 }
 
-@media (min-width: 1200px) and (max-width: 1300px) {
+@media (min-width: 1191px) and (max-width: 1300px) {
     .hero-box2 {
         flex-wrap: nowrap;
         flex-direction: row;
@@ -2509,7 +2516,7 @@ body {
 }
 
 /* Keep right float clearly inside viewport on desktop/tablet range */
-@media (min-width: 1200px) and (max-width: 1300px) {
+@media (min-width: 1191px) and (max-width: 1300px) {
     .right-float {
         right: 10px;
         bottom: 16px;
@@ -2527,8 +2534,8 @@ body {
     height: 320px;
 }
 
-/* Desktop transition: keep the 1400px layout comfortable down to 1300px */
-@media (min-width: 1300px) and (max-width: 1399px) {
+/* Desktop transition: apply the 1300px layout adjustments through 1400px */
+@media (min-width: 1300px) and (max-width: 1400px) {
     html,
     body,
     .bankings {
@@ -2613,8 +2620,13 @@ body {
     }
 
     .hero-box2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         gap: 24px;
         align-items: center;
+        justify-content: space-between;
+        text-align: left;
     }
 
     .hero-text2 {
@@ -2624,6 +2636,7 @@ body {
 
     .hero-img2 {
         flex: 1 1 54%;
+        margin-top: 0;
         display: flex;
         justify-content: flex-end;
     }
@@ -2644,7 +2657,7 @@ body {
 }
 
 /* Desktop-mid cleanup: remove edge gaps and tidy text flow */
-@media (min-width: 1200px) and (max-width: 1300px) {
+@media (min-width: 1191px) and (max-width: 1300px) {
     .header,
     .internets,
     .hero,
@@ -2743,7 +2756,7 @@ body {
 }
 
 /* Final lock: keep right float inside body at 1200px-1300px */
-@media (min-width: 1200px) and (max-width: 1300px) {
+@media (min-width: 1191px) and (max-width: 1300px) {
     .right-float {
         left: auto ;
         right: 110px ;
@@ -2752,7 +2765,7 @@ body {
 }
 
 /* Keep hero section 2 side-by-side with image on the right (1000px-1200px) */
-@media (min-width: 1000px) and (max-width: 1200px) {
+@media (min-width: 1000px) and (max-width: 1190px) {
     .hero-box2 {
         display: flex;
         flex-direction: row;
@@ -2780,8 +2793,8 @@ body {
     }
 }
 
-/* Clean tablet-desktop transition: keep 1075px-1190px aligned with the 1200px layout */
-@media (min-width: 1075px) and (max-width: 1190px) {
+/* Clean tablet-desktop transition: keep 1071px-1190px aligned with the 1200px layout */
+@media (min-width: 1071px) and (max-width: 1190px) {
     html,
     body,
     .bankings {
@@ -2903,7 +2916,7 @@ body {
 }
 
 /* Final 1200px-1300px lock: prevent overflow and keep hero-img2 on the right */
-@media (min-width: 1200px) and (max-width: 1300px) {
+@media (min-width: 1191px) and (max-width: 1300px) {
     html,
     body {
         overflow-x: hidden;

@@ -8,6 +8,7 @@
 body {
     background: #121212;
     overflow-x: hidden;
+    padding-top: 84px;
 }
 
 .header {
@@ -15,7 +16,8 @@ body {
     background: #111;
     padding: 15px 40px;
     border-bottom: 1px solid #333;
-    position: sticky;
+    position: fixed;
+    left: 0;
     top: 0;
     z-index: 1000;
 }
@@ -1456,14 +1458,28 @@ body {
 
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1071px) and (max-width: 1400px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     .header {
         padding: 15px 24px;
     }
 
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-item {
+        font-size: 15px;
+    }
+
     .hero {
-        width: min(92%, 1100px);
+        width: min(92%, 1200px);
         gap: 28px;
+        align-items: center;
     }
 
     .hero-text h1 {
@@ -1472,15 +1488,28 @@ body {
         margin-top: 80px;
     }
 
-    .hero-text p,
-    .whistle-container {
-        max-width: 100%;
+    .hero-text p {
+        width: 100%;
+        max-width: 560px;
     }
 
-    .footer-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 32px 24px;
-        padding: 60px 0;
+    .whistle-container {
+        max-width: 900px;
+    }
+
+    .hero-img {
+        width: 100%;
+        margin-top: 40px;
+        max-width: 620px;
+    }
+
+    .whistle {
+        padding: 72px 20px;
+    }
+
+    .right-float {
+        right: 12px;
+        bottom: 16px;
     }
 }
 
@@ -1540,6 +1569,58 @@ body {
     }
 }
 
+@media (max-width: 1100px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 32px 24px;
+        padding: 60px 0;
+    }
+
+    .footer-bottom {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1070px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 92%;
+        margin-top: -80px;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+        line-height: 1.2;
+        margin: 200px auto 0;
+        font-weight: 700;
+    }
+
+    .hero-text p {
+        width: min(100%, 720px);
+        margin: auto;
+        font-size: 16px;
+        white-space: nowrap;
+        font-weight: 700;
+    }
+
+    .hero-img {
+        width: 90%;
+        max-width: 700px;
+        margin-top: 40px;
+    }
+
+    .whistle {
+        padding: 64px 20px;
+    }
+
+    .whistle-container {
+        text-align: center;
+    }
+}
+
 @media (max-width: 992px) {
     .hero {
         margin-top: -80px;
@@ -1559,7 +1640,6 @@ body {
 
 @media (max-width: 768px) {
     .header {
-        position: static;
         padding: 14px 16px;
     }
 
