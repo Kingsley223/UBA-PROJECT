@@ -7,6 +7,7 @@
 
 body {
     background: #111;
+    width: 100%;
 }
 
 .header {
@@ -1099,7 +1100,7 @@ body {
 .right-float {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: clamp(12px, 2vw, 20px);
     background: #ff3b3b;
     width: 45px;
     height: 45px;
@@ -1253,6 +1254,7 @@ body {
     margin-top: 20px;
     width: 100%;
     color: white;
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -1681,7 +1683,7 @@ body {
     } */
 }
 
-@media(max-width:1105px) {
+@media(max-width:1300px) {
     .header {
         width: 100%;
     }
@@ -1690,7 +1692,9 @@ body {
         font-size: 16px;
     }
 
-
+    .bankings {
+        width: 100%;
+    }
 
 }
 
@@ -2382,6 +2386,30 @@ body {
     flex-wrap: wrap;
 }
 
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .hero-box2 {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-text2 {
+        flex: 0 1 48%;
+        max-width: none;
+    }
+
+    .hero-img2 {
+        flex: 0 1 52%;
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-img2 img {
+        width: min(100%, 560px);
+    }
+}
+
 @media (max-width: 900px) {
     .cards {
         animation: none;
@@ -2410,6 +2438,13 @@ body {
 @media (max-width: 600px) {
     .hero {
         padding: 20px 16px;
+    }
+
+    .right-float {
+        right: 12px;
+        bottom: 16px;
+        width: 40px;
+        height: 40px;
     }
 
     .hero-text h1 {
@@ -2458,5 +2493,211 @@ body {
 @media (max-width: 600px) {
     .buttons .btn1 {
         width: 80px;
+    }
+}
+
+/* Ensure hero media block stays centered on tablet widths */
+@media (max-width: 1070px) {
+    .hero {
+        align-items: center;
+    }
+
+    .hero-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Keep right float clearly inside viewport on desktop/tablet range */
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .right-float {
+        right: 10px;
+        bottom: 16px;
+    }
+}
+
+/* Reduce video size across breakpoints with one consistent override */
+.video-card {
+    width: min(88%, 560px);
+}
+
+.video-card iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 320px;
+}
+
+/* Desktop-mid cleanup: remove edge gaps and tidy text flow */
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .header,
+    .internets,
+    .hero,
+    .banking-text,
+    .videos h2,
+    .content,
+    .hero2,
+    .footer,
+    .footer-bottom {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header,
+    .internets,
+    .hero,
+    .banking-text,
+    .videos h2,
+    .content,
+    .hero2,
+    .footer,
+    .footer-bottom {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero {
+        gap: 24px;
+        align-items: center;
+    }
+
+    .hero-text h1 {
+        width: 100%;
+        max-width: 640px;
+        line-height: 1.2;
+    }
+
+    .hero-text p {
+        width: 100%;
+        max-width: 600px;
+        line-height: 1.6;
+    }
+
+    .video-card {
+        width: 100%;
+    }
+
+    .video-card iframe {
+        max-width: 520px;
+        height: 300px;
+    }
+
+    .videos {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        overflow-x: hidden;
+    }
+
+    .videoss {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .video-card {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        border-radius: 18px;
+        background-color: transparent;
+    }
+
+    .video-card iframe {
+        width: 100%;
+        max-width: none;
+        height: 280px;
+        margin-top: 0;
+        display: block;
+    }
+
+    .bankings,
+    body {
+        overflow-x: hidden;
+    }
+
+    .right-float {
+        left: auto;
+        right: 12px;
+        bottom: 16px;
+    }
+}
+
+/* Final lock: keep right float inside body at 1200px-1300px */
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .right-float {
+        left: auto ;
+        right: 110px ;
+        bottom: 16px;
+    }
+}
+
+/* Keep hero section 2 side-by-side with image on the right (1000px-1200px) */
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .hero-box2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .hero-text2 {
+        flex: 0 1 48%;
+        max-width: none;
+    }
+
+    .hero-img2 {
+        flex: 0 1 52%;
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-img2 img {
+        width: min(100%, 560px);
+        max-width: 560px;
+    }
+}
+
+/* Final 1200px-1300px lock: prevent overflow and keep hero-img2 on the right */
+@media (min-width: 1200px) and (max-width: 1300px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .bankings {
+        width: 100%;
+    }
+
+    .hero-box2 {
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: nowrap ;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .hero-text2 {
+        flex: 1 1 46%;
+        max-width: none;
+    }
+
+    .hero-img2 {
+        flex: 1 1 54%;
+        margin-top: 0 !important;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-img2 img {
+        width: 100%;
+        max-width: 520px;
     }
 }
