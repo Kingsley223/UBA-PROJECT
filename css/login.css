@@ -89,6 +89,34 @@
     }
 }
 
+.image-logs {
+    position: absolute;
+    top: 12px;
+    right: clamp(16px, 4vw, 48px);
+    z-index: 4;
+    display: flex;
+    justify-content: end;
+}
+
+.image-logs a {
+    display: inline-flex;
+}
+
+.login-logo {
+    width: clamp(90px, 12vw, 150px);
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .image-logs {
+        top: 8px;
+        right: 16px;
+    }
+}
+
+
 .hero {
     position: relative;
     height: 100vh;

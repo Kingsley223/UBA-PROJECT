@@ -924,7 +924,7 @@ body {
 
 .quick-linkss3 {
     border-left: 1px solid #333;
-    padding-right:180px;
+    padding-right: 180px;
     margin-top: -45px;
     padding-left: 10px;
 }
@@ -2536,6 +2536,7 @@ body {
 
 /* Desktop transition: apply the 1300px layout adjustments through 1400px */
 @media (min-width: 1300px) and (max-width: 1400px) {
+
     html,
     body,
     .bankings {
@@ -2658,6 +2659,7 @@ body {
 
 /* Desktop-mid cleanup: remove edge gaps and tidy text flow */
 @media (min-width: 1191px) and (max-width: 1300px) {
+
     .header,
     .internets,
     .hero,
@@ -2758,8 +2760,8 @@ body {
 /* Final lock: keep right float inside body at 1200px-1300px */
 @media (min-width: 1191px) and (max-width: 1300px) {
     .right-float {
-        left: auto ;
-        right: 110px ;
+        left: auto;
+        right: 110px;
         bottom: 16px;
     }
 }
@@ -2795,6 +2797,7 @@ body {
 
 /* Clean tablet-desktop transition: keep 1071px-1190px aligned with the 1200px layout */
 @media (min-width: 1071px) and (max-width: 1190px) {
+
     html,
     body,
     .bankings {
@@ -2917,6 +2920,7 @@ body {
 
 /* Final 1200px-1300px lock: prevent overflow and keep hero-img2 on the right */
 @media (min-width: 1191px) and (max-width: 1300px) {
+
     html,
     body {
         overflow-x: hidden;
@@ -2928,8 +2932,8 @@ body {
 
     .hero-box2 {
         display: flex;
-        flex-direction: row ;
-        flex-wrap: nowrap ;
+        flex-direction: row;
+        flex-wrap: nowrap;
         align-items: center;
         justify-content: space-between;
         gap: 24px;
