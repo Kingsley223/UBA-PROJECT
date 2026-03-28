@@ -2243,47 +2243,7 @@ body {
         width: 70px;
     }
 
-    /* .hero2{
-        width: 900px;
-    }
- .hero-box2 {
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-        align-items: center;
-        text-align: center;
-        margin-left: -100px;
-    }
-
-    .hero-text2 {
-        width: 100%;
-    }
-
-    .hero-text2 h1 {
-        width: 100%;
-        font-family: "UBA Sans", Roboto, sans-serif;
-        font-weight: 600;
-        line-height: 44px;
-        color: rgb(255, 255, 255);
-        font-size: 28px;
-    }
-
-    .hero-text2 p{
-        width: 100%;
-    }
-
-    .hero-img2 {
-        width: 100%;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .hero-img2 img {
-        width: 300px;
-        max-width: 300px;
-    }
-     */
+ 
 
 }
 
@@ -2354,11 +2314,7 @@ body {
 
 }
 
-/* @media(max-width:300px) {
-   
-} */
 
-/* ---------- Responsive Cleanup Overrides ---------- */
 
 body {
     overflow-x: hidden;
@@ -2496,14 +2452,14 @@ body {
     }
 }
 
-/* Mobile override: keep only btn1 fixed-width on phones */
+
 @media (max-width: 600px) {
     .buttons .btn1 {
         width: 80px;
     }
 }
 
-/* Ensure hero media block stays centered on tablet widths */
+
 @media (max-width: 1070px) {
     .hero {
         align-items: center;
@@ -2515,7 +2471,7 @@ body {
     }
 }
 
-/* Keep right float clearly inside viewport on desktop/tablet range */
+
 @media (min-width: 1191px) and (max-width: 1300px) {
     .right-float {
         right: 10px;
@@ -2523,7 +2479,7 @@ body {
     }
 }
 
-/* Reduce video size across breakpoints with one consistent override */
+
 .video-card {
     width: min(88%, 560px);
 }
@@ -2534,7 +2490,7 @@ body {
     height: 320px;
 }
 
-/* Desktop transition: apply the 1300px layout adjustments through 1400px */
+
 @media (min-width: 1300px) and (max-width: 1400px) {
 
     html,
@@ -2657,7 +2613,6 @@ body {
     }
 }
 
-/* Desktop-mid cleanup: remove edge gaps and tidy text flow */
 @media (min-width: 1191px) and (max-width: 1300px) {
 
     .header,
@@ -2757,7 +2712,6 @@ body {
     }
 }
 
-/* Final lock: keep right float inside body at 1200px-1300px */
 @media (min-width: 1191px) and (max-width: 1300px) {
     .right-float {
         left: auto;
@@ -2766,7 +2720,7 @@ body {
     }
 }
 
-/* Keep hero section 2 side-by-side with image on the right (1000px-1200px) */
+
 @media (min-width: 1000px) and (max-width: 1190px) {
     .hero-box2 {
         display: flex;
@@ -2795,7 +2749,7 @@ body {
     }
 }
 
-/* Clean tablet-desktop transition: keep 1071px-1190px aligned with the 1200px layout */
+
 @media (min-width: 1071px) and (max-width: 1190px) {
 
     html,
@@ -2918,7 +2872,7 @@ body {
     }
 }
 
-/* Final 1200px-1300px lock: prevent overflow and keep hero-img2 on the right */
+
 @media (min-width: 1191px) and (max-width: 1300px) {
 
     html,
@@ -2946,7 +2900,7 @@ body {
 
     .hero-img2 {
         flex: 1 1 54%;
-        margin-top: 0 !important;
+        margin-top: 0 ;
         display: flex;
         justify-content: flex-end;
     }
@@ -2957,7 +2911,7 @@ body {
     }
 }
 
-/* Final video fix: keep videos centered and proportional from 900px to 320px */
+
 .videoss {
     justify-items: center;
 }
