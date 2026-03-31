@@ -275,7 +275,7 @@ body {
 
 .investors-dropdown {
     position: absolute;
-    left: -215px;
+    left: -220px;
     top: 100%;
     width: 1000px;
     padding: 40px;
@@ -354,7 +354,7 @@ body {
 }
 
 .quick-links2 h3 {
-    padding-left: 20px;
+    padding-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -367,7 +367,7 @@ body {
     display: block;
     margin-bottom: 35px;
     width: 180px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .menu-links3 {
@@ -388,7 +388,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -3px;
+    bottom: 3px;
     width: 0;
     height: 3px;
     background: red;
@@ -396,8 +396,8 @@ body {
 }
 
 .menu-links3:hover::after {
-    width: 45%;
-    left: 20px;
+    width: 65%;
+    left: 10px;
 }
 
 .icon2 {
@@ -425,7 +425,7 @@ body {
 
 .impacts-dropdown {
     position: absolute;
-    left: -305px;
+    left: -330px;
     top: 100%;
     width: 1000px;
     padding: 40px;
@@ -508,7 +508,8 @@ body {
 }
 
 .quick-linkss2 h3 {
-    padding-left: 20px;
+    /* padding-left: 10px; */
+    margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -517,16 +518,16 @@ body {
     margin-top: 20px;
 }
 
-.quick-links2 a {
+.quick-linkss2 a {
     display: block;
     margin-bottom: 35px;
-    margin-left: -30px;
+    margin-left: 10px;
     width: 300px;
-    padding-right: 10px;
+    /* padding-left: 10px; */
     /* border: 1px solid white; */
 }
 
-.menu-links2 {
+.menu-linkss2 {
     position: relative;
     display: inline-block;
     text-decoration: none;
@@ -535,25 +536,25 @@ body {
     padding: 10px 10px;
 }
 
-.menu-links2 .icon {
+.menu-linkss2 .icon {
     margin-left: 10px;
     transition: 0.5s;
 }
 
-.menu-links2::after {
+.menu-linkss2::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -3px;
+    bottom: 3px;
     width: 0;
     height: 3px;
     background: red;
     transition: 0.3s ease;
 }
 
-.menu-links2:hover::after {
+.menu-linkss2:hover::after {
     width: 40%;
-    left: 25px;
+    left: 15px;
 }
 
 .icon2 {
@@ -586,7 +587,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -3px;
+    bottom: 3px;
     width: 0;
     height: 3px;
     background: red;
@@ -595,7 +596,7 @@ body {
 
 .menu-links4:hover::after {
     width: 70%;
-    left: 25px;
+    left: 15px;
 }
 
 .icon2 {
@@ -689,13 +690,13 @@ body {
     border-radius: 14px;
 }
 
-.quick-linkss2 {
+.quick-linksss2 {
     border-left: 1px solid #333;
     padding-left: 20px;
     margin-top: -45px;
 }
 
-.quick-linkss2 h3 {
+.quick-linksss2 h3 {
     padding-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -705,7 +706,7 @@ body {
     margin-top: 20px;
 }
 
-.quick-linkss2 a {
+.quick-linksss2 a {
     display: block;
     margin-top: 20px;
     margin-bottom: 35px;
@@ -974,7 +975,7 @@ body {
 
 .menu-links8:hover::after {
     width: 40%;
-    left: 20px;
+    left: 12px;
 }
 
 .icon2 {
@@ -1017,7 +1018,7 @@ body {
 
 .menu-links9:hover::after {
     width: 30%;
-    left: 20px;
+    left: 10px;
 }
 
 .icon2 {
@@ -1038,6 +1039,10 @@ body {
     color: #ccc;
     cursor: pointer;
 }
+
+/* .right-float i{
+   margin-right: 200px;
+} */
 
 
 .internet-btn {
@@ -1517,6 +1522,11 @@ body {
     color: white;
 }
 
+.btn.red:hover{
+     background-color: #ff3b3b;
+    box-shadow: 5px 5px 18px  #ff3d2f;
+}
+
 .btn.dark {
     background: #333;
     color: white;
@@ -1526,20 +1536,10 @@ body {
     width: 650px;
     max-width: 100%;
 }
-
-
-
-
 .footer {
     padding: 10px 40px;
 
 }
-
-
-
-
-
-
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
